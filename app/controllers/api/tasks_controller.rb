@@ -1,5 +1,5 @@
 class Api::TasksController < ApplicationController
-
+protect_from_forgery
   # GET /tasks
   def index
     # 後々のため、更新順で返します

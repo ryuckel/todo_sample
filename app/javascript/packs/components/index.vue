@@ -25,8 +25,8 @@
     <!-- 完了済みタスク一覧 -->
     <div id="finished-tasks" class="display_none">
       <ul class="collection">
-        <li v-for="task in tasks" v-if="task.is_done"v-bind:id="'row_task_' + task.id" class="collection-item">
-          <input type="checkbox" v-bind:id="'task_' + task.id" checked="checked" />
+        <li v-for="task in tasks" v-if="task.is_done" :id="'row_task_' + task.id" class="collection-item">
+          <input type="checkbox" :id="'task_' + task.id" checked="checked" />
           <label v-bind:for="'task_' + task.id"  class="line-through">{{ task.name }}</label>
         </li>
       </ul>
